@@ -1,11 +1,11 @@
 import React from 'react';
 
-const NewsItem = (props) => {
+const NewsItem = ({item}) => {
     return (
-        <div key={props.item.id}>
-            <h3>{props.item.title}</h3>
+        <div>
+            <h3>{item.title}</h3>
             <span>
-                {props.item.feed}
+                {item.feed}
             </span>
         </div>
     )
